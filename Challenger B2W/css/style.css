@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Quicksand:wght@300&display=swap');
+
+*, *:before, *:after{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/potted.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+.container {
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 50%;
+    border-radius: 4px;
+    top: 120px;
+    margin: 0px auto;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+   
+}
+
+h1{
+    font-size: 30px;
+    color: rgb(18, 146, 86);
+    padding: 3px 0px 5px 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+}
+h1:after {
+    content:'';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    background: -webkit-linear-gradient(left, rgba(86, 179, 143, 0) 0%,rgba(90, 179, 137, 0.8) 20%,rgb(69, 179, 151) 53%,rgba(44, 158, 120, 0.637) 79%,rgba(97, 185, 144, 0) 100%); ;
+}
+
+p {
+    margin-bottom: 13px;
+}
+
+.content p:first-child{
+    margin: 0px;
+}
+
+label{
+    color: rgb(10, 34, 26);
+    position: relative;
+}
+
+::-webkit-input-placeholder {
+    color: #000;
+    font-style: initial;
+}
+
+input{
+    outline: none;
+}
+
+input:not([type="checkbox"]){
+    width: 95%;
+    margin-top: 4px;
+    padding: 5px;
+    border: 1px solid #b2b2b2;
+    border-radius: 7px;
+    box-shadow: 0px 1px 4px 0px rgba(187, 187, 187, 0.87);
+    transition: all 0.2s linear;
+}
+
+input[type="submit"]{
+    width: 100%;
+    cursor: pointer;
+    background: rgba(94, 177, 139, 0.8);
+    padding: 8px 5px;
+    color: rgb(7, 8, 8);
+    font-size: 13px;
+    border: 1px solid rgb(190, 221, 206);
+    margin-bottom: 10px;
+    text-shadow: 0 1px 1px rgb(13, 15, 14);
+    border-radius: 7px;
+    transition: all 0.2s linear;
+}
+
+
+
+a{
+    width: 100px;
+    text-decoration: none;
+    justify-self: end;
+    color: rgb(2, 7, 2)bold;
+    cursor: pointer;
+    transition: all 0.2s linear;    
+}
+
+input[type=submit]:hover {
+    background: rgb(45, 122, 99);
+    border: 1px solid #f0f3f1;
+    
+
+}
+
+
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+
