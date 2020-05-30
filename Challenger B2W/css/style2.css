@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../images/potted.jpg);
+    background-position: center;
+}
+
+.container{
+    background-color: rgb(102, 177, 127.5);
+    opacity: 0.7;
+}
+
+#check {
+    display: none;
+}
+
+#icone {
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.barra{
+    background-color: rgb(7, 7, 7);
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;
+}
+
+nav{
+    width: 100%;
+    position: relative;
+    top: 60px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.link{
+    background-color: #2f7e59;
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 12pt;
+    transition: all .2s linear;
+    color: rgb(5, 3, 3);
+    font-weight: bold;
+    border-bottom: 2px solid #222;
+    opacity: 0;
+    margin-top: 200px;
+}
+
+.link:hover{
+    background-color: aquamarine;
+}
+
+#check:checked ~ .barra{
+    transform: translate(300px);
+}
+
+#check:checked ~ .barra nav a .link{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .2s;
+}
