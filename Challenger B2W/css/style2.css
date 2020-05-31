@@ -4,12 +4,55 @@
 }
 
 body {
-    background-color: burlywood ;
+    background-color: rgb(194, 183, 168) ;
 }
 
 .container{
     background-color: rgb(102, 177, 127.5);
     opacity: 0.7;
+}
+
+.menu-2 {
+    margin: 0;
+    background-color: rgb(104, 180, 136);
+    list-style: none;
+    width: 50%;
+    top: 20%;
+    right: 20%;
+    position: absolute;
+}
+
+.menu-2 ul li{
+    display: inline;
+}
+
+.menu-2 ul li a{
+    padding: 10px 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: cornsilk;
+    font-family: 'Quicksand', sans-serif; 
+}
+
+li.right{
+    float: right;
+    margin-top: 7px;
+    margin-right: 30px;
+}
+
+
+
+.search {
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: bold;
+    font-size: 15px;
+    border: none;  
+    cursor: pointer;    
+}
+
+
+.menu-2 ul li a:hover{
+    color: black;
 }
 
 #check {
