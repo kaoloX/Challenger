@@ -8,7 +8,7 @@
 }
 
 body{
-    background-image: url(../images/potted.jpg);
+    background-image: url(../images/login.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -23,9 +23,10 @@ body{
 }
 
 .content{
-    width: 50%;
-    border-radius: 4px;
+    width: 35%;
+    border-radius: 3px;
     top: 120px;
+    right: 38px;
     margin: 0px auto;
     text-align: center;
     overflow: hidden;
@@ -35,7 +36,7 @@ body{
 
 h1{
     font-size: 30px;
-    color: rgb(18, 146, 86);
+    color: #27ecd5b7;
     padding: 3px 0px 5px 0;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
@@ -48,7 +49,7 @@ h1:after {
     width: 100%;
     height: 2px;
     margin-top: 10px;
-    background: -webkit-linear-gradient(left, rgba(86, 179, 143, 0) 0%,rgba(90, 179, 137, 0.8) 20%,rgb(69, 179, 151) 53%,rgba(44, 158, 120, 0.637) 79%,rgba(97, 185, 144, 0) 100%); ;
+    background: -webkit-linear-gradient(left, rgba(86, 179, 143, 0) 0%,rgb(46, 220, 233) 20%,rgb(73, 230, 230) 53%,rgb(56, 216, 216) 79%,rgba(97, 185, 144, 0) 100%); ;
 }
 
 p {
@@ -81,20 +82,22 @@ input:not([type="checkbox"]){
     border-radius: 7px;
     box-shadow: 0px 1px 4px 0px rgba(187, 187, 187, 0.87);
     transition: all 0.2s linear;
+    text-align: left;
 }
 
 input[type="submit"]{
-    width: 100%;
+    width:50%;
     cursor: pointer;
-    background: rgba(94, 177, 139, 0.8);
-    padding: 8px 5px;
+    background: #27ecd573;
+    padding: 9px 20px;
     color: rgb(7, 8, 8);
     font-size: 13px;
-    border: 1px solid rgb(190, 221, 206);
+    border: 1px solid #27ecd4;
     margin-bottom: 10px;
     text-shadow: 0 1px 1px rgb(13, 15, 14);
     border-radius: 7px;
     transition: all 0.2s linear;
+    text-align: center;
 }
 
 
@@ -105,12 +108,12 @@ a{
     justify-self: end;
     color: rgb(2, 7, 2)bold;
     cursor: pointer;
-    transition: all 0.2s linear;    
+    transition: all 0.2s linear; 
 }
 
 input[type=submit]:hover {
-    background: rgb(45, 122, 99);
-    border: 1px solid #f0f3f1;
+    background: #27ecd531;
+    border: 1px solid #27ecd536;
     
 
 }
