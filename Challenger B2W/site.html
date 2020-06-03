@@ -4,41 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style2.css">
-    <title></title>
+    <title>B2W</title>
 </head>
 <body>
-
-<div class="container">
     <input type="checkbox" id="check">
-    <label for="check" id="icone" ><img src="images/icone.png.png"></label>
-    <div class="barra">
-        <nav>
-            <a href=""><div class="link">menu</div></a>
-            <a href=""><div class="link">menu</div></a>
-            <a href=""><div class="link">menu</div></a>
-            <a href=""><div class="link">menu</div></a>
-            <a href=""><div class="link">menu</div></a>
-            <a href=""><div class="link">menu</div></a>
-            <a href=""><div class="link">menu</div></a>  
-        </nav>   
-    </div>
-</div>
-<div class="menu-2">
-        <ul>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Menu</a></li>
-            <li class="right">
-                <form class="buscar" method="GET">
-                    <input placeholder="Pesquisar" type="search" id="search">
-                    <button class="img-button"><img src="images/search.png"></button>
-                </form>
-            </li>
-        </ul>
-    
-</div>
+    <label for="check" id="icone" ><img src="images/menu-2.png"></label>
+        <section class="vertical">
+            <nav>
+                <img src="images/b2w.png" id="icon-2">
+                <a href=""><div class="link">Menu</div></a>
+                <a href=""><div class="link">Menu</div></a>
+                <a href=""><div class="link">Menu</div></a>
+                <a href=""><div class="link">Menu</div></a>
+                <a href=""><div class="link">Menu</div></a>
+                <a href=""><div class="link">Menu</div></a>
+                <a href=""><div class="link">Menu</div></a>
+            </nav> 
+        </section>   
+        <nav class="menu">
+            <label for="rd_home">Home</label>
+            <label for="rd_treinamentos">Treinamentos</label>
+            <label for="rd_contato">Informações</label>
+            <label for="rd_sobre">Sobre</label>
+        </nav>  
+        <div class="telas">
+            <input type="radio" name="grupo" id="rd_home" checked="true">
+            <input type="radio" name="grupo" id="rd_treinamentos">
+            <input type="radio" name="grupo" id="rd_contato">
+            <input type="radio" name="grupo" id="rd_sobre">
+
+            <section class="secoes">
+                <section class="bloco" id="home"></section>
+                <section class="bloco" id="treinamentos"></section>
+                <section class="bloco" id="contato"></section>
+                <section class="bloco" id="sobre"></section>
+            </section>
+         </div>  
 </body>
 </html>

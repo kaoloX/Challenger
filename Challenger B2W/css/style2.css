@@ -3,56 +3,99 @@
     padding: 0;
 }
 
-body {
-    background-color: rgb(194, 183, 168) ;
+
+.menu{
+    width: 70%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    top: 50px;
+    margin-left: 260px;
 }
 
-.container{
-    background-color: rgb(102, 177, 127.5);
-    opacity: 0.7;
+.menu label{
+    padding: 10px 0;
+    flex-grow: 1;
+    cursor: pointer;  
+    transition: all .4s;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    color: white;
 }
 
-.menu-2 {
-    margin: 0;
-    background-color: rgb(104, 180, 136);
-    list-style: none;
-    width: 50%;
-    top: 20%;
-    right: 20%;
-    position: absolute;
+.menu label:hover{
+    background-color: rgba(65, 70, 71, 0.979);
 }
 
-.menu-2 ul li{
-    display: inline;
+.telas input{
+    display: none;
 }
 
-.menu-2 ul li a{
-    padding: 10px 10px;
-    display: inline-block;
+.telas{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.secoes{
+    transition: all .4s;
+}
+
+#rd_treinamentos:checked ~ .secoes{
+    margin-top: -100vh;
+}
+
+#rd_contato:checked ~ .secoes{
+    margin-top: -200vh;
+}
+
+#rd_sobre:checked ~ .secoes{
+    margin-top: -300vh;
+}
+
+.bloco{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#home{
+    background-color: #59928b;
+}
+
+#treinamentos{
+    background-color: #8ea7a4;
+}
+
+#contato{
+    background-color: #19a089;
+}
+
+#sobre{
+    background-color: aquamarine;
+}
+
+.vertical{
+    top: 0;
+    background-color:black;
+    width: 240px;
+    height: 100%;
+    position: fixed;
+    transition: all .2s linear;
+    left: -240px;
+}
+
+
+.vertical a{
     text-decoration: none;
-    color: cornsilk;
-    font-family: 'Quicksand', sans-serif; 
 }
 
-li.right{
-    float: right;
-    margin-top: 7px;
-    margin-right: 30px;
-}
-
-
-
-.search {
-    font-family: 'Quicksand', sans-serif; 
-    font-weight: bold;
-    font-size: 15px;
-    border: none;  
-    cursor: pointer;    
-}
-
-
-.menu-2 ul li a:hover{
-    color: black;
+.vertical nav{
+    width: 100%;
 }
 
 #check {
@@ -62,31 +105,21 @@ li.right{
 #icone {
     cursor: pointer;
     padding: 15px;
-    position: absolute;
     z-index: 1;
+    position: fixed;
+    padding-top: 15px;
 }
 
-.barra{
-    background-color: rgb(7, 7, 7);
-    height: 100%;
-    width: 300px;
-    position: absolute;
-    transition: all .2s linear;
-    left: -300px;
-}
-
-nav{
-    width: 100%;
-    position: relative;
-    top: 60px;
-}
-
-nav a{
-    text-decoration: none;
+#icon-2{
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    padding-left: 170px;
+    padding-top: 10px;
 }
 
 .link{
-    background-color: #2f7e59;
+    background-color:#27ecd4;
     padding: 20px;
     font-family: 'Quicksand', sans-serif; 
     font-size: 12pt;
@@ -99,15 +132,33 @@ nav a{
 }
 
 .link:hover{
-    background-color: aquamarine;
+    background-color: #35cab9a1;
+    color: white; 
 }
 
-#check:checked ~ .barra{
-    transform: translate(300px);
+#check:checked ~ .vertical{
+    transform: translateX(240px);
 }
 
-#check:checked ~ .barra nav a .link{
+#check:checked ~ .vertical .link{
     opacity: 1;
     margin-top: 0;
-    transition-delay: .2s;
+    transition-delay: .1s;
+}
+
+@media(max-width: 800px){
+    .telas .menu section{
+        width: 100%;
+        float: none;
+    }
+    .telas .menu section{
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+    .telas .menu:hover section{
+        height: auto;
+        max-height: 400px;
+    }
 }
