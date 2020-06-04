@@ -79,72 +79,110 @@
     background-color: aquamarine;
 }
 
-.vertical{
-    top: 0;
-    background-color:black;
-    width: 240px;
-    height: 100%;
-    position: fixed;
-    transition: all .2s linear;
-    left: -240px;
-}
-
-
-.vertical a{
-    text-decoration: none;
-}
-
-.vertical nav{
-    width: 100%;
-}
-
 #check {
     display: none;
 }
 
-#icone {
-    cursor: pointer;
-    padding: 15px;
-    z-index: 1;
+.vertical{
+    height: 100%;
     position: fixed;
-    padding-top: 15px;
+    background-color:black;
+    top: 0;
+    margin-top: 0;
+    overflow: hidden;
+    transition: all .2s;
 }
 
-#icon-2{
-    width: 60px;
-    height: 60px;
-    padding: 20px;
-    padding-left: 170px;
-    padding-top: 10px;
+#lateral{
+    width: 240px;
+    left: -240px;
 }
 
-.link{
+ul {
+    list-style: none;
+}
+
+ul li a{
+    display: block;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+    border-bottom: 2px solid #535756; 
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    transition: all .2s;
     background-color:#27ecd4;
-    padding: 20px;
-    font-family: 'Quicksand', sans-serif; 
-    font-size: 12pt;
-    transition: all .2s linear;
-    color: rgb(5, 3, 3);
-    font-weight: bold;
-    border-bottom: 2px solid #222;
-    opacity: 0;
-    margin-top: 200px;
 }
 
-.link:hover{
-    background-color: #27ecd5a2;
-    color: white; 
+ul li span{
+    float: right;
+    padding-right: 10px;
 }
 
-#check:checked ~ .vertical{
+
+
+ul li a:hover{
+    background-color: rgba(86, 241, 216, 0.61);
+}
+
+.voltar {
+    margin-top: 100px;
+    background-color: #59928b;
+    border-left: solid 5px #046656;
+}
+
+.avulsa{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: rgba(0,0,0, .6);
+    display: none;
+}
+
+#check:checked ~ .avulsa{
+    display: block;
+}
+
+#check:checked ~ #lateral{
     transform: translateX(240px);
 }
 
-#check:checked ~ .vertical .link{
+#check:checked ~ .vertical ul li{
     opacity: 1;
     margin-top: 0;
     transition-delay: .1s;
 }
+
+#cursos,
+#gestao{
+    width: 240px;
+    left: -240px;
+}
+
+#cursos:target,
+#gestao:target {
+    transform: translateX(240px);
+}
+
+#icone {
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+    position: fixed;
+    padding-top: 20px;
+}
+
+#icon-2{
+    width: 120px;
+    height: 60px;
+    right: 50px;
+    padding: 20px;
+    padding-left: 110px;
+    padding-top: 15px;
+}
+
 
 @media(max-width: 800px){
     .telas .menu section{
