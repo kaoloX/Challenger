@@ -24,6 +24,65 @@
     color: white;
 }
 
+.content-1 {
+    width: 50%;
+    height: 65%;
+    margin-top: 30px;
+    margin-right: 90px;
+    text-align: left;
+    display: block;
+    position: sticky;
+}
+
+.content-1 h2{
+    font-size: 40px;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(17, 17, 17);
+    margin-bottom: 26px;
+}
+
+
+.content-1 p{
+    font-size: 15px;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(27, 27, 26);
+    letter-spacing: 0.1px;
+    
+}
+
+.content-2 {
+    width: 50%;
+    height: 70%;
+    margin-right: 90px;
+    text-align: left;
+    position: sticky;
+}
+
+.content-2 h2{
+    font-size: 25px;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(17, 17, 17);
+    margin-bottom: 8px;
+    margin-top: 4px;
+    line-height: 50px;
+}
+
+.content-2 h4{
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    color: rgba(17, 17, 17, 0.863);
+}
+
+
+.content-2 p{
+    font-size: 15px;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(27, 27, 26);
+    letter-spacing: 0.2px;
+    margin-top: 5px;
+}
+
+
 .menu label:hover{
     background-color: rgba(65, 70, 71, 0.979);
 }
@@ -175,7 +234,7 @@ ul li a:hover{
 }
 
 #icon-2{
-    width: 120px;
+    width: 70px;
     height: 60px;
     right: 50px;
     padding: 20px;
