@@ -56,29 +56,32 @@
     margin-right: 90px;
     text-align: left;
     position: sticky;
+    font-family: 'Dosis', sans-serif;
+
 }
 
 .content-2 h2{
     font-size: 25px;
     font-family: 'Dosis', sans-serif;
     color: rgb(17, 17, 17);
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     margin-top: 4px;
     line-height: 50px;
 }
 
 .content-2 h4{
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Dosis', sans-serif;
-    color: rgba(17, 17, 17, 0.863);
+    font-weight: bold;
+    color: rgba(27, 27, 26);
+    padding-bottom: 2px;
 }
 
 
 .content-2 p{
     font-size: 15px;
-    font-family: 'Dosis', sans-serif;
     color: rgb(27, 27, 26);
-    letter-spacing: 0.2px;
+    letter-spacing: 0.1px;
     margin-top: 5px;
 }
 
