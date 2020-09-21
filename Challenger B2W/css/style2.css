@@ -8,6 +8,10 @@
     justify-content: space-between;
 }
 
+.spacing-top {
+    margin-top: 15px;
+}
+
 .card-img,
 .card-img-top {
     margin: 30px auto 0 auto;
@@ -134,7 +138,7 @@
     border-radius: 15px;
     color: #fff;
     background-color: var(--color-primary-light);
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .company-tag h2 {
@@ -197,9 +201,24 @@
 }
 
 .card-front {
-    background-image: url(../images/pessoas.jpeg);
     background-size: cover;
     border-radius: 20px;
+}
+
+.card-content ul li {
+    margin: 10px 0;
+}
+
+.card-front.people {
+    background-image: url(../images/pessoas.jpeg);
+}
+
+.card-front.methods {
+    background-image: url(../images/methods.jpeg);
+}
+
+.card-front.results {
+    background-image: url(../images/results.jpeg);
 }
 
 .card-back {
@@ -208,7 +227,8 @@
 }
 
 .card-content {
-    padding: 20px;
+    padding: 0 30px;
+    font-size: 14px;
 }
 
 .card-body .progress {
@@ -216,7 +236,7 @@
 }
 
 .bloco.bloco-img {
-    background-image: url(../images/WhatsApp\ Image\ 2020-09-12\ at\ 19.31.42.jpeg);
+    background-image: url(../images/bg-init.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
 }
