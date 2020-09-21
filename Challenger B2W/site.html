@@ -1,135 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/style2.css">
     <title>B2W</title>
 </head>
+
 <body>
-    <input type="checkbox" id="check">
-    <label for="check" id="icone" ><img src="images/menu-2.png"></label>
-         <div class="avulsa"></div>   
-         <nav class="vertical" id="lateral"> 
-            <img src="images/b2w.png" id="icon-2">
+    <div class="page">
+
+        <nav class="vertical" id="lateral">
+            <div class="sidebar-img-container">
+            </div>
             <ul>
-                <li><a href="" class="voltar">Voltar</a></li>
-                <li><a href="#" >Home</a></li>
-                <li><a href="#cursos" >Cursos <span>+</span></a></li>
-                <li><a href="#gestao" >Gestão <span>+</span></a></li>
-                <li><a href="#" >Contato</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="./pages/CoursesList.html">Cursos</a></li>
             </ul>
         </nav>
-        <nav class="vertical" id="cursos">
-            <ul>
-                <li><a href="#" class="voltar">Voltar</a></li>
-                <li><a href="#" >Documentos</a></li>
-                <li><a href="#" >Manuais</a></li>
-                <li><a href="#" >Atividades</a></li>
-                <li><a href="#" >Testes</a></li>
-                <li><a href="#" >Provas</a></li>
-            </ul>
-        </nav>
-        <nav class="vertical" id="gestao">
-            <ul>
-                <li><a href="#" class="voltar">Voltar</a></li>
-                <li><a href="#" >Rotina de Acesso</a></li>
-                <li><a href="#" >Documentos</a></li>
-                <li><a href="#" >Rotina de Atividades</a></li>
-                <li><a href="#" >Desenvolvimento</a></li>
-                <li><a href="#" >Resultados de Provas</a></li>
-                <li><a href="#" >Resultados de Testes</a></li>
-            </ul>
-        </nav>
-        <nav class="menu">
-            <label for="rd_home">Home</label>
-            <label for="rd_treinamentos">Estratégia e Vantagens</label>
-            <label for="rd_contato">Treinamentos</label>
-            <label for="rd_sobre">FAQ</label>
-        </nav>  
+
+        <div class="chat-icon"></div>
         <div class="telas">
-            <input type="radio" name="grupo" id="rd_home" checked="true">
-            <input type="radio" name="grupo" id="rd_treinamentos">
-            <input type="radio" name="grupo" id="rd_contato">
-            <input type="radio" name="grupo" id="rd_sobre">
-
             <section class="secoes">
-                <section class="bloco" id="home">
-                    <div class="content-1">
-                        <h2>Sobre nós</h2>
-                        <div class="description">
-                            <p>      
-                                Fundada a partir de lojas pioneiras no comércio eletrônico, a história da B2W reflete a fusão do Submarino e Americanas.com, que no ano anterior já havia adquirido o controle do Shoptime, conhecido pelas vendas em canal fechado.  
-
-                                O surgimento da B2W é marcado por histórias diferentes. A Americanas.com surgiu no final do ano de 1999 como um braço das Lojas Americanas, conhecida pela forte presença no varejo dentro de shoppings centers do país. Um de seus proprietários é Jorge Paulo Lemann, conhecido empresário que controla empresas como Ambev, Kraft Hein e Burger King no Brasil.
-                            
-
-                            
-                                Do mercado de livrarias online surge o Submarino. Criada por investidores, a marca surgiu no mesmo ano em que a Americanas.com, decorrente de uma série de estruturações e de um lançamento com resultados surpreendentes. Apenas no primeiro mês de vendas, obteve um faturamento superior a um milhão de reais.
-
-                                As duas empresas atuavam de formas distintas, em um mercado ainda pouco explorado — mas com grandes perspectivas. A mudança no perfil dos consumidores na internet abria portas para negócios online.
-                        
-                                Hoje a B2W possui as maiores e mais queridas marcas da internet (Americanas.com, Submarino, Shoptime e Sou Barato) e uma operação de marketplace em rápido crescimento. A companhia atua nas seguintes frentes: e-commerce (1P) e Marketplace (3P) por meio das marcas Americanas.com, Submarino, Shoptime; serviços de crédito ao consumidor Submarino Finance e Digital Finance; pagamentos, crédito e serviços financeiros através da Ame; plataforma de tecnologia; e soluções de logística, distribuição e atendimento ao cliente.
-                                
-
-                                A organização da companhia é composta por profissionais com ampla experiência no mercado digital, pioneiros do comércio eletrônico no Brasil e com visão estratégica privilegiada do mercado.
-                            </p>  
+                <section class="bloco bloco-img" id="home">
+                    <div class="content">
+                        <div class="holder">
+                            <div class="welcome-title">
+                                <h2>Parabéns!</h2>
+                            </div>
+                            <div class="welcome-text">
+                                <p>
+                                    Agora você faz parte do nosso time!
+                                </p>
+                            </div>
+                            <div class="welcome-text">
+                                <p>
+                                    Venha aprender tudo sobre a B2W conosco!
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>
                 <section class="bloco" id="treinamentos">
-                    <div class="content-2">
-                        <h2>Vantagens Competitivas</h2>
-                        <div class="description">
-                            <p>
-                                <h3>Time Digital Referência no Brasil</h3>
-                                A Companhia conta com o time digital mais bem sucedido do Brasil e com um forte programa de recrutamento e seleção. As oportunidades de carreira estão atreladas a um sistema de meritocracia e ao comprometimento de seus Associados com a visão de longo prazo da Companhia. Visando suportar os desafios de crescimento, a Companhia conta ainda com programas de treinamento e capacitação das pessoas. A ênfase na capacitação dos Associados e no desenvolvimento interno vão ao encontro do estabelecimento de metas cada vez mais desafiadoras.
+                    <div class="content">
+                        <div class="company">
+                            <div class="company-tag">
+                                <h2>Quem somos</h2>
+                            </div>
+                            <div class="company-description">
+                                <p> A B2W surgiu com a fusão de lojas pioneiras no comércio eletrônico, Submarino e Americanas.com, que no ano anterior já havia adquirido o controle do Shoptime, conhecido pelas vendas em canal fechado.</p>
 
-                                Em 2020, a B2W Digital foi certificada com o selo "Great Place to Work 2020", um importante reconhecimento do engajamento do time.
-                             
-                                <h3>Qualidade de Serviços</h3>
+                                <p> A Americanas.com era um braço das Lojas Americanas, varejista de shoppings centers do país, enquanto o Submarino era um sucesso de vendas online com faturamento mensal milhonário.</p>
 
-                                A Companhia trabalha para garantir a melhor experiência de compra para o cliente, por meio de um processo simples de compra, de uma entrega rápida e eficaz e de um melhor serviço de atendimento. O sistema logístico permite a realização de entregas no mesmo dia da compra para determinados produtos e localidades e também que o cliente acompanhe todas as etapas do processo de entrega, desde a confirmação da compra até o recebimento do pedido.
+                                <p>Hoje a B2W possui as maiores e mais queridas marcas da internet.
+                                </p>
 
-                                <h4>Plataforma Tecnologica e Logistica</h4>
+                                <p>
+                                    A companhia atua nas frentes: e-commerce (1P) e Marketplace (3P) por meio das marcas Americanas.com, Submarino, Shoptime; serviços de crédito ao consumidor Submarino Finance e Digital Finance; pagamentos, crédito e serviços financeiros através da Ame;
+                                    plataforma de tecnologia; e soluções de logística, distribuição e atendimento ao cliente.
 
-                                Ao longo dos últimos anos, investimenos fortemente nos pilares do negócio: Tecnologia e Logística. Trabalhamos fortemente e investimos muitos recursos para integração das nossas plataformas de negócio e na criação de uma sólida infraestrutura operacional, que permite que a Companhia opere por meio de uma estrutura multicanal, multinegócios e multimarcas, visando atender o cliente em todas as suas necessidades.
+                                </p>
+                            </div>
+                            <div class="company-tag">
+                                <h2>Missão</h2>
+                            </div>
+                            <div class="company-description">
+                                <p>“Realizar os sonhos e atender as necessidades de consumo das pessoas, poupando tempo e dinheiro e superando as suas expectativas.”</p>
+                            </div>
+                            <div class="company-tag">
+                                <h2>Valores</h2>
+                            </div>
 
-                    
-                                <h4>Modelo Administrativo Diferenciado</h4>
+                            <div class="flex-display">
+                                <div class="value-card">
+                                    <div class="card-inner">
+                                        <div class="card-front"></div>
+                                        <div class="card-back">
+                                            <div class="card-content">
+                                                <ul>
 
-                                A B2W possui uma cultura diferenciada de gestão, voltada para a maximização dos resultados. A filosofia é baseada em forte controle orçamentário, disciplina financeira, estabelecimento de metas e atualização tecnológica.  
-                            </p>                         
+                                                    <li>Um sonho grande e desafiador faz todo mundo remar na mesma direção
+                                                    </li>
+                                                    <li>Gente boa, trabalhando em equipe, crescendo na medida de seu talento e sendo recompensada por isso;</li>
+                                                    <li>Escolher pessoas melhores do que nós, treiná-las, desafiá- las e mantê-las é a nossa principal tarefa;</li>
+                                                    <li>A liderança pessoal é vital, tanto nas atitudes heroicas quantos nos pequenos gestos do dia a dia.</li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="value-card">
+                                    <div class="card-inner">
+                                        <div class="card-front"></div>
+                                        <div class="card-back">
+                                            <div class="card-content">
+                                                <ul>
+
+                                                    <li>Um sonho grande e desafiador faz todo mundo remar na mesma direção
+                                                    </li>
+                                                    <li>Gente boa, trabalhando em equipe, crescendo na medida de seu talento e sendo recompensada por isso;</li>
+                                                    <li>Escolher pessoas melhores do que nós, treiná-las, desafiá- las e mantê-las é a nossa principal tarefa;</li>
+                                                    <li>A liderança pessoal é vital, tanto nas atitudes heroicas quantos nos pequenos gestos do dia a dia.</li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="value-card">
+                                    <div class="card-inner">
+                                        <div class="card-front"></div>
+                                        <div class="card-back">
+                                            <div class="card-content">
+                                                <ul>
+
+                                                    <li>Um sonho grande e desafiador faz todo mundo remar na mesma direção
+                                                    </li>
+                                                    <li>Gente boa, trabalhando em equipe, crescendo na medida de seu talento e sendo recompensada por isso;</li>
+                                                    <li>Escolher pessoas melhores do que nós, treiná-las, desafiá- las e mantê-las é a nossa principal tarefa;</li>
+                                                    <li>A liderança pessoal é vital, tanto nas atitudes heroicas quantos nos pequenos gestos do dia a dia.</li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </section>
-                <section class="bloco" id="contato"></section>
                 <section class="bloco" id="sobre">
-                    <div class="content-3">
-                        <h2>Perguntas Frequentes</h2>
-                        <h4>Pergunta 1</h4>
-                        <p>
-                            Resposta 1
-                        </p>
-                        <h4>Pergunta 2</h4>
-                        <p>
-                            Resposta 2
-                        </p>
-                        <h4>Pergunta 3</h4>
-                        <p>
-                            Resposta 3
-                        </p>
-                        <h4>Pergunta 4</h4>
-                        <p>
-                            Resposta 4
-                        </p>
-                        <h4>Pergunta 5</h4>
-                        <p>
-                            Resposta 4
-                        </p>
+                    <div class="content">
+                        <div class="organogram">
+                            <div class="img-container">
+                                <img src="./images/CICLO VIRTUOSO[1252].jpg" alt="">
+                            </div>¨
+                            <a href="">
+                                <div class="company-tag">
+                                    <a href="./pages/CoursesList.html"><button type="button"><h2>Iniciar Treinamento!</h2></button></a>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </section>
             </section>
-         </div>  
+        </div>
+
+    </div>
 </body>
+
 </html>
