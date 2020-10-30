@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="./css/chat.css">
     <title>B2W</title>
 </head>
 
@@ -22,11 +23,21 @@
             </ul>
         </nav>
 
-        <div class="chat-icon"></div>
+        <div class="chat-icon" id="chat">
+            <div class="principal">
+                <span id="chat-close">X</span>
+                <h2>Converse com a Mila!</h2>
+                <div class="conversa">
+                </div>
+                <span class="writing">Digitando ...</span>
+                <input type="text" id="pergunta" name="pergunta" class="campo" placeholder="Digite aqui" />
+                <button id="enviar" onclick="carregarDados()">Enviar</button>
+            </div>
+        </div>
         <div class="telas">
             <nav class="navbar navbar-light bg-primary">
                 <span class="navbar-text">
-                    B2Wboarding  - Treinamentos B2W
+                    B2Wboarding - Treinamentos B2W
                 </span>
 
                 <div class="user-info">
@@ -71,7 +82,8 @@
                             <div class="company-description">
                                 <p> A B2W surgiu com a fusão de lojas pioneiras no comércio eletrônico, Submarino e Americanas.com, que no ano anterior já havia adquirido o controle do Shoptime, conhecido pelas vendas em canal fechado.</p>
 
-                                <p> A Americanas.com era um braço das Lojas Americanas, varejista de shoppings centers do país, enquanto o Submarino era um sucesso de vendas online com faturamento mensal milhonário.</p>
+                                <p> A Americanas.com era um braço das Lojas Americanas, varejista de shoppings centers do país, enquanto o Submarino era um sucesso de vendas online com faturamento mensal milhonário.
+                                </p>
 
                                 <p>Hoje a B2W possui as maiores e mais queridas marcas da internet.
                                 </p>
@@ -159,7 +171,9 @@
                             </div>¨
                             <a href="">
                                 <div class="company-tag">
-                                    <a href="./pages/CoursesList.html"><button type="button"><h2>Iniciar Treinamento!</h2></button></a>
+                                    <a href="./pages/CoursesList.html"><button type="button">
+                                            <h2>Iniciar Treinamento!</h2>
+                                        </button></a>
                                 </div>
                             </a>
                         </div>
@@ -169,6 +183,7 @@
         </div>
     </div>
 
+    <script src="./js/chat.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
